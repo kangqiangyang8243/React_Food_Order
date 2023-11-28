@@ -6,6 +6,7 @@ const nextConfig = {
       "americanlifestylemag.com",
       "images.unsplash.com",
       "c8.alamy.com",
+      "github.com",
     ],
   },
 };

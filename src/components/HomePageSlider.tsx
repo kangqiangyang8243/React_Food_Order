@@ -1,8 +1,6 @@
 "use client";
 import Image from 'next/image'
 import React, { useState } from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -36,7 +34,7 @@ function HomePageSlider() {
     return (
         <Zoom scale={1.0} autoplay infinite duration={2000} transitionDuration={1000} arrows={false} indicators={false}>
       {data.map((data, index) => (
-        <div key={index} className="flex flex-col lg:flex-row h-screen border-b">
+        <div key={index} className="max-w-7xl mx-auto flex flex-col lg:flex-row h-screen border-b">
           {/* Text Section */}
           <div className='flex-1 h-screen flex flex-col justify-center items-center bg-green-200 gap-20 font-semibold font-serif'>
             <h3 className='text-3xl  text-center text-green-600 px-2'>{data.text}</h3>
